@@ -1,0 +1,12 @@
+{
+    "name": "Chifoumi",
+    "description": "Pierre-papier-ciseaux est un jeu effectué avec les mains et opposant un ou plusieurs joueurs",
+	"Author": "Ahmed MUSTAPHA",
+    "license": "*****",
+    "autoload": {
+        "psr-4": {"Chifoumi\\": "src/"}
+    },
+    "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.*"
+    }
+}
