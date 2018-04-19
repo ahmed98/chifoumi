@@ -30,7 +30,7 @@ class Play {
     /**
      * Chifoumi calculate
      * 
-     * @return 0 if equality 1 if play 1 wins -1 if player 2 wins
+     * @return 0 if equality 1 if player 1 wins -1 if player 2 wins
      */
     public function chifoumi()
     {

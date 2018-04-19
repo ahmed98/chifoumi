@@ -16,19 +16,25 @@ and open the template in the editor.
     <body>
         <div class="contain btn-choose">
             <h2>Chifoumi</h2>
-            <button type="button" class="btn btn-primary btn-lg btn-block btn-computer">Jouer contre l'odinateur</button>
-            <button type="button" class="btn btn-secondary btn-lg btn-block btn-player">Jouer contre un autre joueur</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block btn-computer">Jouer contre l'ordinateur</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block btn-player">Jouer contre un adversaire</button>
         </div>
     </body>
-    <div class="score">
-        <div class="result"></div>
-        <div class="player1Score"></div>
-        <div class="player2Score"></div>
-    </div>
     <div class="contain player">
-
+        <a href=" <?php echo $_SERVER['REQUEST_URI'];?>" class="back"><i class="fa fa-caret-left"></i> Retour à la page d'acceuil</a>
+        <div class="player-1-screen">
+            <h3>Vous</h3>
+            <i class="fa fa-user"></i>
+            <div> Score: <strong class="player1Score"></strong></div>
+        </div>
+        
+        <div class="player-2-screen">
+            <h3>Adversaire</h3>
+            <i class="fa fa-user"></i>
+            <div> Score: <strong class="player2Score"></strong></div>
+        </div>
+        <div class="result"></div>
         <input type="hidden" value="computer" class="mode">
-        <h2 class="player-1"><i class="fa fa-user"></i></h2>
 
         <table class="table table-no-border">
             <thead>
@@ -42,29 +48,26 @@ and open the template in the editor.
             </tbody>
         </table>
         <div class="laptop-wrapper">
-            <h2 class="laptop"><i class="fa fa-laptop"></i></h2>
-
             <table class="table table-no-border">
                 <thead>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a  href="javascript:void(0)" class="scissor-laptop" ><i class="fa fa-cut"></i></a></td>
-                        <td><a href="javascript:void(0)" class="leaf-laptop" ><i class="fa fa-leaf"></i></a></td>
-                        <td><a href="javascript:void(0)" class="stone-laptop"><i class="fa fa-cloud"></i></a></td>
+                        <td class="scissor-laptop"><i class="fa fa-cut"></i></td>
+                        <td  class="leaf-laptop"><i class="fa fa-leaf"></i></td>
+                        <td class="stone-laptop"><i class="fa fa-cloud"></i></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="player-2-wrapper">
-            <h2 class="player-1"><i class="fa fa-user"></i></h2>
 
             <table class="table table-no-border">
                 <thead>
                 </thead>
                 <tbody class="tab-player-2">
                     <tr>
-                        <td><a  href="javascript:void(0)" class="scissor-player-2" data-shot="3"><i class="fa fa-cut"></i></a></td>
+                        <td><a  href="javascript:void(0)" class="scissor-player-2" data-shot2="3"><i class="fa fa-cut"></i></a></td>
                         <td><a href="javascript:void(0)" class="leaf-player-2" data-shot2="2"><i class="fa fa-leaf"></i></a></td>
                         <td><a href="javascript:void(0)" class="stone-player-2" data-shot2="1"><i class="fa fa-cloud"></i></a></td>
                     </tr>

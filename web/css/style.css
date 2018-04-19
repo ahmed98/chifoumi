@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : 18 avr. 2018, 23:03:02
-    Author     : amustapha
+    Author     : amustapha <ahmedmust@hotmail.fr>
 */
 
 .contain {
@@ -18,6 +18,7 @@ and open the template in the editor.
 }
 .table-no-border {
     border: none;
+    margin-left: 84px;
 }
 .table-no-border th, tr, td, thead, tbody{
     border:  none !important;
@@ -33,7 +34,7 @@ and open the template in the editor.
     margin-left: 95px;
     margin-top: 55px;
 }
-.fa {
+.contain .fa:not(.fa-caret-left){
     font-size: 57px !important;
 }
 .player-1, .laptop {
@@ -41,4 +42,29 @@ and open the template in the editor.
     color: #080;
     border-bottom: 1px solid;
     width: 8%;
+}
+.player-1-screen {
+    float: left;
+}
+.player-1-screen {
+    color: #007bff;
+}
+.player-2-screen {
+    float: right;
+}
+.player-1-screen, .player-2-screen {
+    text-align: center;
+}
+.result {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 37px;
+}
+.back {
+    float: left;
+    margin-left: -351px;
+    color: #000;
+}
+.tab-player-2 td .fa {
+    color: #000;
 }

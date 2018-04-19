@@ -10,10 +10,10 @@ require '../vendor/autoload.php';
 use \Chifoumi\Model\Play;
 
     $play = new Play();
-    $play->setShotPlayer1($_POST['shotPlayer1']);
-    $play->setShotPlayer2($_POST['shotPlayer2']);
+    $play->setShotPlayer1(intval($_POST['shotPlayer1']));
+    $play->setShotPlayer2(intval($_POST['shotPlayer2']));
     
-    echo $play->chifoumi();
+    echo (int) $play->chifoumi();
 
 
 
