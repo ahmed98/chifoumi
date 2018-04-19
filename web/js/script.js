@@ -68,7 +68,7 @@ $('.scissor-player-2, .leaf-player-2, .stone-player-2').click(function() {
  */
  var startChifoumi = function () {
     $('.result').html('');
-    $.post('src/Player.php',{shotPlayer1: shotPlayer1, shotPlayer2: shotPlayer2}, function(data) {
+    $.post('src/player.php',{shotPlayer1: shotPlayer1, shotPlayer2: shotPlayer2}, function(data) {
         $('.result').show();
         if(data == 0) {
             $('.result').html('Egalité').css('color','#ffaa00'); 
