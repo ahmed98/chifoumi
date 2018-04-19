@@ -57,7 +57,7 @@ $('.scissor-player-2, .leaf-player-2, .stone-player-2').click(function() {
      $('.tab-player-2 tr td i').css('color','inherit');
     shotPlayer2 = parseInt($(this).data('shot2'));
     $('i', this).css('color','red');
-    if(shotPlayer1 !== 0) {
+    if(shotPlayer1 != 0) {
         startChifoumi();
     }
 });
